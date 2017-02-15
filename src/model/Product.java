@@ -9,13 +9,13 @@ public abstract class Product {
 	protected Date crDate;
 	protected BigDecimal price;
 	protected String name;
-	protected int inch;
+	protected String inch;
 
-	public int getInch() {
+	public String getInch() {
 		return inch;
 	}
 
-	public void setInch(int inch) {
+	public void setInch(String inch) {
 		this.inch = inch;
 	}
 

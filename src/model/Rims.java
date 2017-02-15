@@ -4,6 +4,6 @@ import java.math.BigDecimal;
 
 public class Rims extends Product {
 
-	public Rims(BigDecimal price, String name, int inch) {
+	public Rims(String name, BigDecimal price, String inch) {
 	}
 }

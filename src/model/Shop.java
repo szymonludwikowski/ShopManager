@@ -3,7 +3,7 @@ package model;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class Shop {
+public class Shop{
 
 	private String shopsite;
 	private ArrayList<Product> prodList;
