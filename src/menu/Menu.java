@@ -12,7 +12,7 @@ public class Menu {
 
 		Scanner scaner = new Scanner(System.in);
 		String option;
-		Shop shopp = null;
+		Shop shop = null;
 
 		System.out.println("1 - Add Rims");
 		System.out.println("2 - Remove product");
@@ -35,12 +35,26 @@ public class Menu {
 				System.out.print("Inches: ");
 				String inch = scaner.nextLine();
 				Product newProduct = new Rims(name, price, inch);
-				shopp.addProd(newProduct);
+				shop.addProd(newProduct);
+				break;
+				
+			case "2":
+				
+				shop.showList();
+				System.out.print("Give ID to delete: ");
+				int id = scaner.nextInt();
+				scaner.nextLine();
+				shop.delProd(id);
 				break;
 
 			case "3":
+				
 				System.out.println("Product list: ");
-				shopp.showList();
+				shop.showList();
+				
+			case "4":
+				
+				System.out.println("");
 			}
 		} while (!option.equals("q"));
 
