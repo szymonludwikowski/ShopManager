@@ -1,5 +1,9 @@
 package model;
 
-public class Rims {
+import java.math.BigDecimal;
 
+public class Rims extends Product {
+
+	public Rims(BigDecimal price, String name, int inch) {
+	}
 }
